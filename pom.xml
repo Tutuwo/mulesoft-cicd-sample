@@ -30,6 +30,24 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 			</plugin>
+			<plugin>
+    			<groupId>org.mule.tools.maven</groupId>
+    			<artifactId>mule-maven-plugin</artifactId>
+			    <version>3.3.5</version>
+			    <extensions>true</extensions>
+			    <configuration>
+			        <cloudHubDeployment>
+			            <uri>https://anypoint.mulesoft.com</uri>
+			            <muleVersion>4.2.2</muleVersion>
+			            <username>dmmpereiratrial</username>
+			            <password>Monteiro34397</password>
+			            <applicationName>mulesoft-cicd-sample</applicationName>
+			            <environment>Sandbox</environment>
+			            <workerType>MICRO</workerType>
+			            <objectStoreV2>true</objectStoreV2>
+			        </cloudHubDeployment>
+			    </configuration>
+			</plugin>
 		</plugins>
 	</build>
 
